@@ -1,40 +1,44 @@
 public class MenuItem {
 
+    private String id;
     private String name;
     private String category;
     private double price;
+    private int totalSold;
 
-    public MenuItem(String name,String category,double price){
+    public MenuItem(String id,String name,String category,double price){
+        this.id=id;
         this.name=name;
         this.category=category;
         this.price=price;
+        this.totalSold=0;
     }
 
-    public String getName() {
-        return name;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public String getCategory() {
-        return category;
-    }
-
     public void setCategory(String category) {
         this.category = category;
-    }
-
-    public double getPrice() {
-        return price;
     }
 
     public void setPrice(double price) {
         this.price = price;
     }
-    public String toString() {
-        return "MenuItem [name=" + name + ", category=" + category + ", price=" + price + "]";
+
+    public void setTotalSold(int totalSold) {
+        this.totalSold = totalSold;
     }
+    
+    public String toString() {
+        return "MenuItem [id=" + id + ", name=" + name + ", category=" + category + ", price=" + price + ", totalSold="
+                + totalSold + "]";
+    }
+   
+    
   
 }
