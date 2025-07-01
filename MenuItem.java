@@ -36,8 +36,5 @@ public class MenuItem {
     public String toString() {
         return "MenuItem [name=" + name + ", category=" + category + ", price=" + price + "]";
     }
-    public static void main(String[] args) {
-        System.out.println("Every this is ok");
-    }
-    
+  
 }
