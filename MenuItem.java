@@ -34,11 +34,33 @@ public class MenuItem {
         this.totalSold = totalSold;
     }
     
+    public String getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public int getTotalSold() {
+        return totalSold;
+    }
+
+    public void incrementSales(int quantety){
+        this.totalSold+=quantety;
+    }
+    
     public String toString() {
-        return "MenuItem [id=" + id + ", name=" + name + ", category=" + category + ", price=" + price + ", totalSold="
-                + totalSold + "]";
+        return "[id=" + id + ", name=" + name + ", category=" + category + ", price=" + price +" BDT"+ ", totalSold="
+                + totalSold + " BDT"+"]";
     }
    
-    
-  
 }
