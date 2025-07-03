@@ -12,7 +12,7 @@ public class Order {
     private boolean isPrepared;
 
     public Order(String studentName,String studentId){
-        this.orderId=OrderIdGenerator.generateOrderId();
+        //this.orderId=OrderIdGenerator.generateOrderId();
         this.studentName=studentName;
         this.studentId=studentId;
         this.orderTime=LocalDateTime.now();
@@ -103,7 +103,7 @@ public class Order {
            "🍽️ Status      : " + (isPrepared ? "✅ Ready for Pickup" : "⏳ Preparing") + "\n" +
            "=====================================\n";
     }
-    
+
     public String toString() {
         return "Order ID: " + orderId +
                " | Student: " + studentName +
