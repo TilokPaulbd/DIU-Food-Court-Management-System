@@ -10,7 +10,6 @@ public class OrderItem {
     }
     
     
-    
     public MenuItem getItem() {
         return item;
     }
@@ -32,7 +31,6 @@ public class OrderItem {
     public void setQuantety(int quantety) {
         this.quantety = quantety;
     }
-
 
 
     public void incrementQuantity(int amount){
