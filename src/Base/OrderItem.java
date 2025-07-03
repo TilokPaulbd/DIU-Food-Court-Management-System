@@ -1,3 +1,5 @@
+package src.Base;
+
 public class OrderItem {
     private MenuItem item;
     private int quantety;
@@ -6,15 +8,33 @@ public class OrderItem {
         this.item=item;
         this.quantety=quantety;
     }
+    
+    
+    
+    public MenuItem getItem() {
+        return item;
+    }
 
-    public int getQuantity(){
+
+
+    public void setItem(MenuItem item) {
+        this.item = item;
+    }
+
+
+
+    public int getQuantety() {
         return quantety;
     }
 
-    public void setQuantity(int quantety){
-        this.quantety=quantety;
+
+
+    public void setQuantety(int quantety) {
+        this.quantety = quantety;
     }
-    
+
+
+
     public void incrementQuantity(int amount){
         this.quantety+=amount;
     }
