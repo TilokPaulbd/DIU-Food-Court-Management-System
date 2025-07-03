@@ -1,3 +1,4 @@
+package src.Base;
 public class MenuItem {
 
     private String id;
